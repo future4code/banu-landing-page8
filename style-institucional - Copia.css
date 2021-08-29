@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    padding-top: 100px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 113px;
+    display: flexbox;
+    flex-direction: row;
+    background-color: #ffdbc4;
+    border-bottom: 2px solid #6e3f21c7;
+    align-self: center;
+    justify-items: center;
+    padding-top: 5px;
+}
+
+.header p {
+    width: 60px;
+    height: 30px;
+    flex-wrap: wrap;
+    display: flexbox;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    font-family: monospace;
+}
+
+.header #member-area {
+    float: right;
+    right: 30px;
+}
+
+.header #logo-cabecalho {
+    float: left;
+    background-color: none;
+    padding: 10px;
+    padding-right: 10px;
+    padding-top: 8px;
+}
+.header a {
+    float: left;
+    display: flexbox;
+    flex-direction: row;
+    color: #5c2b02;
+    text-align: center;
+    align-self: center;
+    align-items: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.header a:hover {
+    background-color: #a8764d63;
+    border-top-left-radius:30%;
+    border-top-right-radius:30%;
+    border-bottom-left-radius:30%;
+    border-bottom-right-radius:30%;
+    min-height: 80px;
+}
+
+footer{
+    background-color: #ab9890;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 35px;
+}
+
+main {
+    display: grid;
+    grid-template-rows: 2fr 3fr 1fr;
+    
+
+}
+
+.quem-somos {
+    background-color: #f7f7f7;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    column-gap: 10px;
+    padding-left: 10px;
+    padding-right: 20px;
+}
+
+#logo {
+    grid-row: 1/2;
+    justify-self: center;
+    align-self: center;
+    width: 480px;
+    height: 430px;
+    align-items: center;
+}
+
+#texto-qs{
+    grid-row: 1 / 2;
+    justify-self: center;
+    align-self: center;
+    align-items: center;
+    text-align: justify;
+    padding: 20px;
+    font-size: 20px;
+}
+
+#titulo-qs{
+    justify-self: center;
+    align-self: end;
+    text-align: center;
+}
+
+.caracteristicas {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#locais {
+    grid-row: 1 / 2;
+    grid-column: 1 / 3;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    padding-top: 20px;
+}
+
+#locais>img, #equipe>img, #diversidade-produtos>img {
+    width: 200px;
+    
+}
+
+#equipe {
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    padding-top: 20px;
+}
+
+#diversidade-produtos {
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    padding-top: 20px;
+    
+}
+
+#juntos-clientes{
+    grid-column: 1/3;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+.sustentavel {
+    background-color: #f7f7f7;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    align-items: center;
+    column-gap: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.sustentavel img {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    justify-self: center;
+    align-self: center;
+    width: 250px;
+}
+
+.sustentavel h2{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    font-size: 30px;
+    padding: 0 5px;
+}
+
+.sustentavel p {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    padding: 0 5px;
+    font-size: 18px;
+}
