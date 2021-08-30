@@ -100,105 +100,41 @@ main {
     
 }
 
-.main-faq {
-    align-items: center;
-    justify-items: center;
-
-}
-.main-faq> div {
-    margin: 20px;
-}
-
-#divBusca{
-    background-color:#ffdbc4;
-    border:solid 2px #6e3f21c7;
-    border-radius:10px;
-    width:300px;
-    height:32px;
-  }
-  
-  #txtBusca{
-    float:left;
-    background-color:transparent;
-    padding-left:5px;
-    font-size:18px;
-    border:none;
-    height:32px;
-    width:195px;
-  }
-  
-  #btnBusca{
-    border:none;
-    float:left;
-    height:32px;
-    border-radius:0 7px 7px 0;
-    width:70px;
-    font-weight:bold;
-    background:#6e3f21c7;
-  }
-  
-  #divBusca img{
-    float:left;
-  }
-#divBusca > img {
-    width: 30px;
-}
-
 h1 {
-    color: #6e3f21c7;
-    font-size:xx-large;
-}
-.perguntas {
-    margin: 7px;
-}
-
-.itens {
-    align-items: center;
-    text-align: center;
-    margin: 10px;
-
-}
-
-h4{
-    font-size: larger;
-    margin-bottom: 7px;
-    color: #6e3f21c7;
-}
-#pergunta-img {
-    width:  300px;
-}
-
-p > a:link {
-    color: #6e3f21c7;
-    text-decoration: none;
-}
-
-p > a:visited {
-    color: #6e3f21c7;
-    text-decoration: none;
-}
-
-p > a:hover {
-    color: #583219c7;
-    text-decoration: none;
-
-}
-p > a:active {
-    color: #6e3f21c7;
-    text-decoration: none;
+    color: #6e3f21c7
 }
 
 form {
     margin: 0 auto;
     width: 400px;
     padding: 1em;
-    border: 1px solid #CCC;
+    border: 1px solid #c9ac9a;
     border-radius: 1em;
 }
 .member-area {
     margin: 0 auto;
     width: 400px;
     padding: 1em;
-    border: 1px solid #CCC;
+    border: 1px solid #c9ac9a;
     border-radius: 1em;
+}
+form div + div {
+    margin-top: 1em;
+}
+
+label {
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+    font-size: smaller ;
+    align-items: center;
+}
+
+input, textarea {
+    font: 1em sans-serif;
+    width: 170px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #c9ac9a;
+    align-items: center;
 }
