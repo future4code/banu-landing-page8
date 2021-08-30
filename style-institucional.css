@@ -1,0 +1,324 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    padding-top: min(110px, 10vh);
+}
+
+/* .header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    min-width: 375px;
+    height: auto;
+    display: flexbox;
+    flex-direction: row;
+    background-color: #ffdbc4;
+    border-bottom: 2px solid #6e3f21c7;
+    align-self: center;
+    justify-items: center;
+    padding-top: 5px;
+    justify-content: space-evenly;
+    font-size: 2vw;
+} */
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    min-width: 375px;
+    height: auto;
+    max-height: 110px;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr)); /* ÓTIMO ISSO */
+    column-gap: 1vw;
+    background-color: #ffdbc4;
+    border-bottom: 2px solid #6e3f21c7;
+    align-items: start;
+    justify-items: center;
+    padding-top: 5px;
+    font-size: 100%;
+    
+}
+
+.header #p {
+    width: 10vw;
+    max-width: 60px;
+    height: auto;
+    flex-wrap: wrap;/* 
+    display: flexbox;
+    flex-direction: row; */
+    text-align: center;
+    align-items: center;
+    font-family: monospace;
+    font-size: 1vw;
+}
+
+.header #member-area {
+    right: 0;
+    grid-row: 1/2;
+    grid-column: span 4;
+    justify-self: end;
+}
+
+.header #logo-cabecalho {
+    max-width: 8vw;
+    max-height: 8vh;
+    height: auto;
+    float: left;
+    background-color: none;
+    padding: 10px;
+    padding-left: 10px;
+    padding-top: 8px;    
+    align-self: center;
+    justify-items: center;
+}
+.header a {
+    float: left;
+    display: flexbox;
+    flex-direction: row;
+    color: #5c2b02;
+    align-items: start;
+    justify-items: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.header a:hover {
+    background-color: #a8764d63;
+    border-top-left-radius:30%;
+    border-top-right-radius:30%;
+    border-bottom-left-radius:30%;
+    border-bottom-right-radius:30%;
+    height: auto;
+}
+
+footer {
+    background-color: #ab9890;
+    color: white;
+    position: fixed;
+    align-items: center;
+    font-size: small;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+    padding-top: 6px;
+    padding-left: 6px;
+}
+
+main {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-rows: repeat(auto-fill, minmax(1fr, 2fr));
+    
+
+}
+
+.header .displayed{
+    min-width: 10px;
+    max-width: 10vw;
+    height: auto;
+}
+
+.quem-somos {
+    background-color: #f7f7f7;
+    display: grid;
+    /* grid-template-columns: 1fr 2fr; */
+    grid-template-columns: repeat(auto-fill, minmax(1fr, 2fr));
+    grid-template-rows: repeat(auto-fill, minmax(1fr, 2fr));
+    column-gap: 10px;
+    padding: 20px;/* 
+    padding-right: 20px; */
+}
+.entrega {
+    background-color: #f7f7f7;
+    display: grid;
+    max-width: 100%;
+    height: auto;
+    grid-template-columns: repeat(auto-fill, minmax(1fr, 2fr)); 
+    column-gap: 30px;
+    padding: 30px;
+    font-size: 100%;
+}
+
+/* .entrega h2{
+    font-size: 100%;
+} */
+/* .entrega h1, #texto-entrega{
+} */
+
+.svg {
+    background-color: white;
+    display: grid;
+    max-width: 100%;
+    height: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 40px;
+    padding: 30px;
+    justify-self: center;
+    align-self: center;
+    align-items: center;
+    text-align: center;
+    font-size: 100%;
+}
+
+.svg svg {
+    max-width: 25vw;
+    height: auto;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+}
+#logo {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    min-width: 30px;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    align-self: center;
+}
+
+/* #logo {
+    grid-row: 1/2;
+    min-width: 50px;
+    width: 100%;
+    height: auto;
+    align-items: center;
+} */
+
+#texto-entrega{
+    grid-row: 1 / 2;
+    grid-column: 3/4;
+    justify-self: center;
+    align-self: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    font-size: 100%;
+}
+
+#texto-qs{
+    grid-row: 1 / 2;
+    justify-self: center;
+    align-self: center;
+    align-items: center;
+    text-align: justify;
+    padding: 20px;
+    font-size: 100%;
+}
+
+#titulo-entrega{
+    grid-column: 2/3;
+    width: 100%;
+    align-self: center;
+    text-align: center;
+    justify-content:center;
+    font-size: 100%;
+}
+
+#titulo-qs{
+    justify-self: center;
+    align-self: end;
+    text-align: center;
+}
+
+.caracteristicas {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    padding: 30px;
+    font-size: 100%;
+}
+
+#locais {
+    grid-row: 1 / 2;
+    grid-column: 1 / 3;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    font-size: 100%;
+}
+
+#locais>img, #equipe>img, #diversidade-produtos>img {
+    width: 200px;
+    
+}
+
+#equipe {
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 100%;
+}
+
+#diversidade-produtos {
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 100%;
+    
+}
+
+#juntos-clientes{
+    grid-column: 1/3;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 100%;
+}
+
+.sustentavel {
+    background-color: #f7f7f7;
+    display: grid;
+    /* grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));  */
+    grid-template-columns: repeat(auto-fill, minmax(30%, 2fr));
+    grid-template-rows: repeat(auto-fill, minmax(30%, 2fr));
+    align-items: center;
+    column-gap: 20px;
+    padding: 30px;
+    font-size: 100%;
+}
+
+.sustentavel img {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    justify-self: center;
+    align-self: center;
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+}
+
+.sustentavel h2{
+    grid-column: auto;
+    grid-row: auto;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    font-size: 100%;
+    flex-wrap: wrap;
+}
+
+.sustentavel p {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    font-size: 100%;
+    flex-wrap: wrap;
+}
+
+#app {
+    grid-template-rows: 1fr;
+    width: 100%;
+    height: auto;
+}
