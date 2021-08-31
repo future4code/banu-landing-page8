@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    padding-top: 100px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 113px;
+    display: flexbox;
+    flex-direction: row;
+    background-color: #ffdbc4;
+    border-bottom: 2px solid #6e3f21c7;
+    align-self: center;
+    justify-items: center;
+    padding-top: 5px;
+}
+
+.header p {
+    width: 60px;
+    height: 30px;
+    flex-wrap: wrap;
+    display: flexbox;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    font-family: monospace;
+}
+
+.header #member-area {
+    float: right;
+    right: 30px;
+}
+
+.header #logo-cabecalho {
+    float: left;
+    background-color: none;
+    padding: 10px;
+    padding-right: 10px;
+    padding-top: 8px;
+}
+.header a {
+    float: left;
+    display: flexbox;
+    flex-direction: row;
+    color: #5c2b02;
+    text-align: center;
+    align-self: center;
+    align-items: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.header a:hover {
+    background-color: #a8764d63;
+    border-top-left-radius:30%;
+    border-top-right-radius:30%;
+    border-bottom-left-radius:30%;
+    border-bottom-right-radius:30%;
+    min-height: 80px;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: 10fr 0fr 0fr 0fr;
+    align-items: center;
+    background-color: #ffdbc4;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    display: flexbox;
+    flex-direction: row;
+    background-color: #ffdbc4;
+    border-top: 2px solid #6e3f21c7;
+    align-self: center;
+    justify-items: center;
+    padding-top: px;
+}
+
+footer > p {
+    font-size: smaller;
+    text-align: center;
+}
+.img-footer {
+    width: 30px;
+}
+
+main {
+    display: grid;
+    padding-top: 40px;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    
+}
+
+.main-faq {
+    align-items: center;
+    justify-items: center;
+
+}
+.main-faq> div {
+    margin: 20px;
+}
+
+#divBusca{
+    background-color:#ffdbc4;
+    border:solid 2px #6e3f21c7;
+    border-radius:10px;
+    width:300px;
+    height:32px;
+  }
+  
+  #txtBusca{
+    float:left;
+    background-color:transparent;
+    padding-left:5px;
+    font-size:18px;
+    border:none;
+    height:32px;
+    width:195px;
+  }
+  
+  #btnBusca{
+    border:none;
+    float:left;
+    height:32px;
+    border-radius:0 7px 7px 0;
+    width:70px;
+    font-weight:bold;
+    background:#6e3f21c7;
+  }
+  
+  #divBusca img{
+    float:left;
+  }
+#divBusca > img {
+    width: 30px;
+}
+
+h1 {
+    color: #6e3f21c7;
+    font-size:xx-large;
+}
+.perguntas {
+    margin: 7px;
+}
+
+.itens {
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+
+}
+
+h4{
+    font-size: larger;
+    margin-bottom: 7px;
+    color: #6e3f21c7;
+}
+#pergunta-img {
+    width:  300px;
+}
+
+p > a:link {
+    color: #6e3f21c7;
+    text-decoration: none;
+}
+
+p > a:visited {
+    color: #6e3f21c7;
+    text-decoration: none;
+}
+
+p > a:hover {
+    color: #583219c7;
+    text-decoration: none;
+
+}
+p > a:active {
+    color: #6e3f21c7;
+    text-decoration: none;
+}
+
+form {
+    margin: 0 auto;
+    width: 400px;
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+}
+.member-area {
+    margin: 0 auto;
+    width: 400px;
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+}

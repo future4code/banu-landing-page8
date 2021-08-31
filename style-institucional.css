@@ -5,42 +5,10 @@
 }
 
 body {
+
     padding-top: min(110px, 10vh);
 }
 
-/* .header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    min-width: 375px;
-    height: auto;
-    display: flexbox;
-    flex-direction: row;
-    background-color: #ffdbc4;
-    border-bottom: 2px solid #6e3f21c7;
-    align-self: center;
-    justify-items: center;
-    padding-top: 5px;
-    justify-content: space-evenly;
-    font-size: 2vw;
-} 
-.header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    min-width: 375px;
-    height: auto;
-    max-height: 150px;
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
-    column-gap: 30px;
-    background-color: #ffdbc4;
-    border-bottom: 2px solid #6e3f21c7;
-    align-items: start;
-    justify-items: center;
-    font-size: 100%;
-}*/
 
 @media screen and (max-width: 376px) {
     .header a {
@@ -100,8 +68,6 @@ main .institucional{
 /*//////////////////////////////////////////////////CARACTERISTICAS/////////////////////////*/
 .caracteristicas {
     display: grid;
-    /* grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr; */
     grid-template-columns: repeat(auto-fill, minmax(1fr, 1fr));
     grid-template-rows: repeat(auto-fill, minmax(30%, 1fr));
     padding: 30px;
@@ -115,6 +81,7 @@ main .institucional{
     align-self: center;
     text-align: center;
     font-size: 100%;
+    padding-top: 20px;
 }
 
 #locais>img, #equipe>img, #diversidade-produtos>img {
@@ -128,15 +95,15 @@ main .institucional{
     text-align: center;
     padding: 20px;
     font-size: 100%;
+    padding-top: 20px;
 }
 
 #diversidade-produtos {
     justify-self: center;
     align-self: center;
-    text-align: center;
     padding: 20px;
     font-size: 100%;
-    
+    padding-top: 20px;   
 }
 
 #juntos-clientes{
@@ -162,6 +129,11 @@ main .institucional{
     padding: 30px;
     padding-bottom: 70px;
     font-size: 100%;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 20px;
 }
 
 .sustentavel img {
@@ -193,3 +165,4 @@ main .institucional{
     font-size: 100%;
     flex-wrap: wrap;
 }
+
