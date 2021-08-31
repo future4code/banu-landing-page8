@@ -1,0 +1,440 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/* main{
+    display: grid; */
+    /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
+    /* grid-template-rows: 400px 400px 400px 400px 400px 400px 400px 400px; */
+    /* grid-template-rows: repeat(auto-fill, minmax(400px, 1fr)); 
+    grid-template-columns: 1fr;
+    width: 100%;
+    height: auto;
+    padding-bottom: 30px;
+} 
+ */
+@media screen and (max-width: 446px) {
+    .vem-ser-4food {
+    padding-top: 300px;
+    }
+    .estagiario > img {
+    padding-top: 50px;
+    }
+    .convocacao{
+        padding-bottom: 20px;
+    }
+}
+@media screen and (min-width: 446px) {
+    .vem-ser-4food {
+    padding-top: 100px;
+    }
+    .trainee {
+        display: grid;
+        background-color: whitesmoke;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px 1fr 1fr;
+        width: 100%;
+        height: auto;/* 
+        max-height: 400px; */
+        grid-row: 7/8;
+        column-gap: 30px;
+        row-gap: 30px;/* 
+        padding-top: 20px;*/
+        padding-bottom: 20px; 
+    }
+    
+    .trainee>img{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        justify-self: center;
+        align-self: center;
+        width: 75%;
+        max-width: 300px;
+    }
+    
+    .trainee>h2 {
+        grid-column: 1/4;
+        grid-row: 1/2;
+        justify-self: center;
+        align-self: center;
+        text-align: center;
+        font-size: auto;
+        max-height: 100px;
+    }
+    
+    #texto-trainee {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        justify-self: center;
+        align-self: center;
+        text-align: center;
+        font-size: 100%;/* 
+        width: 50%; */
+    
+    }
+    
+    #requisitos-trainee {
+        grid-column: 1/3;
+        grid-row: 3/4;
+        justify-self: center;
+        align-self: center;
+        text-align: center;
+        font-size: 100%;/* 
+        max-width: 50%; */
+    }  
+}
+
+.vem-ser-4food {
+    background-color: whitesmoke;
+    padding-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 80px 2fr;
+    width: 100%;
+    height: auto;
+    max-height: 490px;
+    grid-row: 1/2;
+    column-gap: 20px;
+}
+
+
+.vem-ser-4food>img {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    justify-self: center;
+    align-self: center;
+    max-width: 100%;
+    height: auto;
+}
+
+.vem-ser-4food>h1 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    font-size: auto;
+
+}
+
+.vem-ser-4food>p {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    padding: 30px;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    font-size: 100%;
+}
+/*//////////////////////////////////////////////////METAS/////////////////////////*/
+.metas {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 5fr;
+    width: 100%;
+    height: auto;
+    min-height: 375px;
+    grid-row: 2/3;
+    column-gap: 20px;/* 
+    padding-top: 20px; */
+}
+
+.metas>img {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    justify-self: center;
+    align-self: center;
+    width: 100%;
+
+}
+
+.metas>h2{
+    grid-column: 1/3;
+    grid-row: 1/2;/* 
+    max-height: 100px; */
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    font-size: auto;
+}
+
+.metas>p {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    font-size: auto;
+    padding-right: 20px;
+}
+
+/*//////////////////////////////////////////////////PLANOS DE CARREIRA/////////////////////////*/
+.texto-planos-carreira {/* 
+    grid-row: 1/2;
+    grid-column: 1/4; 
+    display: grid;*/
+    grid-row: 3/4;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px;
+    background-color: whitesmoke;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/*//////////////////////////////////////////////////OPORTUNIDADE PARA TODOS/////////////////////////*/
+.inclusivo {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr 1fr;
+    background-color:white;
+    width: 100%;
+    height: auto;
+    grid-row: 4/5;
+    row-gap: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.inclusivo>img {
+    grid-column: auto;
+    grid-row: auto;
+    justify-self: center;
+    align-self: center;
+    width: 50%;
+}
+
+.inclusivo>h2 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    justify-self: center;
+    text-align: center;
+    align-self: center;
+    font-size: 100%;
+    
+}
+
+.inclusivo>p {
+    grid-column: auto;
+    grid-row: auto;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    font-size: auto;
+    padding: 40px;
+}
+/*//////////////////////////////////////////////////JOVEM APRENDIZ/////////////////////////*/
+.jovem-aprendiz {/* 
+    grid-column: 1/4; */
+    display: grid;
+    background-color: whitesmoke;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 80px 200px 1fr;
+    width: 100%;
+    height: auto;
+    grid-row: 5/6;
+    column-gap: 20px;
+    row-gap: 10px;
+    padding-bottom: 20px;
+}
+
+.jovem-aprendiz>img {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    justify-self: center;
+    align-self: end;
+    height: auto;
+    min-width: 130px;
+    max-width: 50%;/* 
+    height: auto; */
+}
+
+.jovem-aprendiz>h2 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    height: auto;
+    font-size: auto;
+    padding: 5px;
+}
+
+#texto-explicativo{
+    grid-column: 1/2;
+    grid-row: 2/4;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    font-size: auto;
+    padding: 30px;
+}
+
+#texto-requisitos{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    justify-self: center;
+    align-self: center;
+    text-align: left;
+    font-size: auto;
+    padding: 10px;
+}
+
+/*//////////////////////////////////////////////////ESTAGIÁRIO/////////////////////////*/
+
+.estagiario {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 100px 2fr 2fr;
+    background-color: white;
+    width: 100%;
+    height: auto;
+    grid-row: 6/7;
+    column-gap: 30px;
+    row-gap: 10px;
+    padding-top: 20px;
+}
+
+.estagiario > img {
+    grid-row: 3/4;
+    grid-column: 2/3;
+    justify-self: center;
+    align-self: start;/* 
+    padding-top: 50px; */
+    max-width: 75%;
+    height: auto;
+}
+
+.estagiario>h2 {
+    grid-row: 1/2;
+    grid-column: 1/4;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    font-size: auto;
+}
+
+#texto-estagiariopt1{
+    grid-row: 2/3;
+    grid-column: 1/2;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    font-size: auto;
+    padding-left: 20px;
+}
+#texto-estagiariopt2{
+    grid-row: 3/4;
+    grid-column: 1/2;
+    justify-self: center;
+    align-self: start;
+    text-align: center;
+    font-size: auto;
+    padding-left: 20px;
+}
+
+#requisitos-estagio {
+    justify-self: center;
+    align-self: center;
+    text-align: left;
+    font-size: auto;
+    padding: 20px;   
+}
+/*//////////////////////////////////////////////////TRAINEE/////////////////////////*/
+.trainee {
+    display: grid;
+    background-color: whitesmoke;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 150px 1fr;
+    width: 100%;
+    height: auto;/* 
+    max-height: 400px; */
+    grid-row: 7/8;
+    column-gap: 10px;
+    row-gap: 30px;/* 
+    padding-top: 20px;*/
+    padding-bottom: 20px; 
+}
+
+.trainee>img{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    justify-self: center;
+    align-self: center;
+    width: 75%;/* 
+    max-width: 30%; */
+}
+
+.trainee>h2 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    font-size: auto;
+    max-height: 100px;
+}
+
+#texto-trainee {
+    grid-column: 1/2;
+    grid-row: 2/4;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    font-size: 100%;
+    width: 50%;
+    padding-right: 10px;   
+
+}
+
+#requisitos-trainee {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    justify-self: center;
+    align-self: center;
+    text-align: justify;
+    font-size: 100%;
+    max-width: 50%;
+    padding-right: 10px; 
+}
+/*//////////////////////////////////////////////////CANDIDATURA/////////////////////////*/
+.convocacao{
+    height: auto;
+    min-height: 200px;
+    grid-row: 8/9;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 1fr 7fr 1fr;
+    align-self: center;
+    row-gap: 20px;
+    padding-top: 20px;
+    padding-right: 40px;
+    padding-left: 40px;
+    /*padding-bottom: 50px; */
+    text-align: center;
+}
+
+.convocacao>h1 {
+    grid-row: 1/2;
+    grid-column: 2/3;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+}
+
+.convocacao> #convocacao-texto {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    font-size: 100%;
+    max-width: 75%;
+}
