@@ -8,7 +8,7 @@ body {
     padding-top: 100px;
 }
 
-.header {
+/* .header {
     position: fixed;
     top: 0;
     width: 100%;
@@ -89,7 +89,7 @@ footer > p {
 }
 .img-footer {
     width: 30px;
-}
+} */
 
 main {
     display: grid;
