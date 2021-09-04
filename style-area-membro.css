@@ -1,104 +1,28 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-body {
-    padding-top: 100px;
-}
-
-.header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 113px;
-    display: flexbox;
-    flex-direction: row;
-    background-color: #ffdbc4;
-    border-bottom: 2px solid #6e3f21c7;
-    align-self: center;
-    justify-items: center;
-    padding-top: 5px;
-}
-
-.header p {
-    width: 60px;
-    height: 30px;
-    flex-wrap: wrap;
-    display: flexbox;
-    flex-direction: row;
-    text-align: center;
-    align-items: center;
-    font-family: monospace;
-}
-
-.header #member-area {
-    float: right;
-    right: 30px;
-}
-
-.header #logo-cabecalho {
-    float: left;
-    background-color: none;
-    padding: 10px;
-    padding-right: 10px;
-    padding-top: 8px;
-}
-.header a {
-    float: left;
-    display: flexbox;
-    flex-direction: row;
-    color: #5c2b02;
-    text-align: center;
-    align-self: center;
-    align-items: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-.header a:hover {
-    background-color: #a8764d63;
-    border-top-left-radius:30%;
-    border-top-right-radius:30%;
-    border-bottom-left-radius:30%;
-    border-bottom-right-radius:30%;
-    min-height: 80px;
-}
-
-footer{
-    display: grid;
-    grid-template-columns: 10fr 0fr 0fr 0fr;
-    align-items: center;
-    background-color: #ffdbc4;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 50px;
-    display: flexbox;
-    flex-direction: row;
-    background-color: #ffdbc4;
-    border-top: 2px solid #6e3f21c7;
-    align-self: center;
-    justify-items: center;
-    padding-top: px;
-}
-
-footer > p {
-    font-size: smaller;
-    text-align: center;
-}
-.img-footer {
-    width: 30px;
-}
 
 main {
+    height: 93vh;
     display: grid;
-    padding-top: 40px;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     align-items: center;
     
 }
+
+
+.em-baixo-da-header{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    height: 17vh;
+
+}
+
 
 h1 {
     color: #6e3f21c7
@@ -106,17 +30,20 @@ h1 {
 
 form {
     margin: 0 auto;
-    width: 400px;
+    width: 30vw;
     padding: 1em;
     border: 1px solid #c9ac9a;
     border-radius: 1em;
+    text-align: center;
 }
 .member-area {
     margin: 0 auto;
-    width: 400px;
+    width: 30vw;
     padding: 1em;
     border: 1px solid #c9ac9a;
     border-radius: 1em;
+    text-align: center;
+        
 }
 form div + div {
     margin-top: 1em;
@@ -124,7 +51,7 @@ form div + div {
 
 label {
     display: inline-block;
-    width: 150px;
+    width: 10vw;
     text-align: right;
     font-size: smaller ;
     align-items: center;
@@ -132,9 +59,44 @@ label {
 
 input, textarea {
     font: 1em sans-serif;
-    width: 170px;
+    width: 15vw;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     border: 1px solid #c9ac9a;
     align-items: center;
+}
+
+
+
+@media screen and (min-device-width : 320px) and (max-device-width : 480px){
+    main{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        padding-bottom: 5vh;
+        padding-top: 5vh;
+        row-gap: 5vh;
+        padding-bottom: 5vh;
+        padding-right: 4vh;
+        padding-left: 4vh;
+
+    }
+
+    form, .member-area {
+        width: 100%;
+    }
+
+    label {
+        width: 100%;
+        text-align: start;
+    }
+
+    input, textarea{
+        width: 100%;
+    }
+
+    .em-baixo-da-header{
+        display: none;
+    }
+
 }
