@@ -29,6 +29,7 @@ h1 {
 }
 
 form {
+    
     margin: 0 auto;
     width: 30vw;
     padding: 1em;
@@ -36,12 +37,17 @@ form {
     border-radius: 1em;
     text-align: center;
 }
+#form-novo-usuario{
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
 .member-area {
     margin: 0 auto;
     width: 30vw;
     padding: 1em;
     border: 1px solid #c9ac9a;
     border-radius: 1em;
+    align-self: start;
     text-align: center;
         
 }
