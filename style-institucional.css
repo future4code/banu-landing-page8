@@ -139,6 +139,10 @@ main {
     font-size: 1.2vw;
 }
 
+@media screen and (min-device-width : 320px) and (max-device-width : 480px){
+    
+}
+
 
 
 /*//////////////////////////////////////////////////CARACTERISTICAS/////////////////////////*/
