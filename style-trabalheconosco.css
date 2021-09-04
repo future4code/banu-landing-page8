@@ -296,7 +296,55 @@ main{
     font-size: 20px;
 }
 
+@media screen and (min-device-width : 320px) and (max-device-width : 480px){
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .vem-ser-4food{
+        display: flex;
+        flex-direction: column;
+        row-gap: 5vh;
+    }
 
+    .metas, .planos {
+        display: flex;
+        flex-direction: column-reverse;
+        
+    }
+
+    .metas{
+        flex-direction: column;
+        padding: 5vh;
+        row-gap: 5vh;
+    }
+
+    .planos{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .planos .inclusivo, .planos .jovem-aprendiz, .planos .estagiario, .planos .trainee{
+        display: flex;
+        flex-direction: column;
+        padding: 5vh 2vw;
+        row-gap: 2vh;
+
+    }
+
+    .convocacao{
+        display: flex;
+        flex-direction: column;
+        padding: 5vh 3vw;
+        row-gap: 5vh;
+    }
+
+ 
+
+    
+}
 
 
 
