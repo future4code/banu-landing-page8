@@ -18,6 +18,30 @@ trazendo também as oportunidades de carreira para se trabalhar na empresa.
 * Para acessar a página do projeto [CLIQUE AQUI](worthless-hat.surge.sh)
 
 
+-> Imagens da Página
+
+* Página institucional (Quem Somos)
+
+![Print 1](https://user-images.githubusercontent.com/86810734/132139668-967b7ba7-4a8d-47bd-a246-26fd19f07703.png)
+
+<br>![Print 2](https://user-images.githubusercontent.com/86810734/132139673-6bc27717-5651-45b1-9b48-410e2067c3e4.png)
+
+
+
+
+* Página Nossos Serviços
+
+![Print 3](https://user-images.githubusercontent.com/86810734/132139677-769e5666-a585-4018-8737-f6add3a5f73a.png)
+
+* Página FAQ Perguntas
+
+![Print 4](https://user-images.githubusercontent.com/86810734/132139679-7d2c0371-957f-47c6-8409-fe8db878bef7.png)
+
+* Página Área de Membros
+
+![Print 5](https://user-images.githubusercontent.com/86810734/132139682-d2347497-05f2-488d-9984-43b8876178aa.png)
+
+
 
 
 
