@@ -1,3 +1,15 @@
 main{
-    height: 92vh;
+    width: 100%;
+    display: grid;
+    padding-top: 15%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.index-logo {
+    width: 100%;
+    display: grid;
+    padding-top: 10%;
+    justify-self: center;
+    align-self: center;
 }
