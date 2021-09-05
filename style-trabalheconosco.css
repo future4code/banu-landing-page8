@@ -149,7 +149,7 @@
 }
 
 /*//////////////////////////////////////////////////PLANOS DE CARREIRA/////////////////////////*/
-.texto-planos-carreira {/
+.texto-planos-carreira {
     grid-row: 3/4;
     grid-template-columns: 1fr;
     grid-template-rows: 100px;

@@ -109,7 +109,7 @@ main {
     margin: 20px;
 }
 
-#divBusca{
+/* #divBusca{
     background-color:#ffdbc4;
     border:solid 2px #6e3f21c7;
     border-radius:10px;
@@ -139,7 +139,7 @@ main {
   
   #divBusca img{
     float:left;
-  }
+  } */
 #divBusca > img {
     width: 30px;
 }
