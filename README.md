@@ -17,7 +17,7 @@ trazendo também as oportunidades de carreira para se trabalhar na empresa.
 
 * Para acessar a página do projeto [CLIQUE AQUI](worthless-hat.surge.sh)
 
--> Imagens das Telas do Projeto
+
 
 
 
