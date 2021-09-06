@@ -5,10 +5,8 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-main {
-    display: grid;
-    grid-template-rows: 0.1fr 1.5fr 3fr 1fr;
-    
+body {
+    padding-top: min(110px, 10vh);
 }
 
 .em-baixo-da-header{
@@ -17,8 +15,12 @@ main {
     
 }
 
-/*//////////////////////////////////////////////////QUEM SOMOS/////////////////////////*/
-
+main .institucional{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-rows: repeat(auto-fill, minmax(1fr, 2fr));
+}
 
 .quem-somos{
     grid-row: 2/3;
@@ -123,53 +125,6 @@ main {
     justify-self: center;
     align-self: center;
     text-align: center;
-    padding: 0 3vw;
-    font-size: 1.2vw;
+    font-size: 100%;
+    flex-wrap: wrap;
 }
-
-@media screen and (min-device-width : 320px) and (max-device-width : 480px){
-    main {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-    .quem-somos{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .caracteristicas {
-        display: flex;
-        flex-direction: column;
-    }
-
-    #juntos-clientes{
-        font-size: 100%;
-    }
-    #locais {
-        padding: 12.42px;
-    }
-
-    .sustentavel{
-        display: flex;
-        flex-direction: column;
-        height: 60vh;
-        justify-content: center;
-
-        row-gap: 1vh;
-
-    }
-
-    .sustentavel>img {
-        width: 50%;
-    }
-    .sustentavel>h2 {
-        font-size: 5vw;
-    }
-
-    .sustentavel>p {
-        font-size: 4vw ;
-    }
-
-}
-

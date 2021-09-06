@@ -19,9 +19,7 @@ main {
 }
 
 
-#divBusca{
-    display: flex;
-    justify-content: space-between;
+/* #divBusca{
     background-color:#ffdbc4;
     border:solid 0.05vw #6e3f21c7;
     border-radius: 0.6vw;
@@ -39,6 +37,9 @@ main {
   }
   
   
+  #divBusca img{
+    float:left;
+  } */
 #divBusca > img {
     width: 5vh;
 }
