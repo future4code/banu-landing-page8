@@ -5,15 +5,15 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-body {
+/* body {
     padding-top: min(110px, 10vh);
-}
+} */
 
-.em-baixo-da-header{
+/* .em-baixo-da-header{
     grid-row: 1/2;
     background-color: #f7f7f7;
     
-}
+} */
 
 main .institucional{
     width: 100%;
@@ -27,13 +27,14 @@ main .institucional{
     background-color: #f7f7f7;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    padding: 1em;
+    grid-template-rows: 1fr 1fr;
+    padding: 0.5em;/* 
+    margin-top: 0.5em; */
 }
 
-#texto-qs{
-    grid-column: 1/2;
-    grid-row: 1/4;
+#texto-qs{/* 
+    grid-column: 1/2; */
+    grid-row: 1/3;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -43,11 +44,12 @@ main .institucional{
 }
 
 #logo{
+    grid-column: 2/3;
     grid-row: 1/4;
     justify-self: center;
     align-self: center;
-    width: 70%;
-    height: 80%;
+    width: 100%;
+    height: auto
 } 
 
 .caracteristicas {
@@ -127,4 +129,33 @@ main .institucional{
     text-align: center;
     font-size: 100%;
     flex-wrap: wrap;
+}
+
+@media screen and (min-device-width : 320px) and (max-device-width : 480px){
+
+    .quem-somos {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 1fr;
+    }
+
+    #texto-qs{
+        grid-column: 1/2;
+        grid-row: 1/2;/* 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        row-gap: 2vw; */
+    }
+    
+    #logo{
+        grid-column: 1/2;
+        grid-row: 2/3;/* 
+        justify-self: center;
+        align-self: center;
+        width: 100%;
+        height: auto */
+    } 
 }
