@@ -81,7 +81,7 @@ div >h3 {
     #texto-fim{
         display: flex;
         flex-direction: column;
-        height: 100%;eight: 0vh;
+        height: 100%;
     }
     
 }
